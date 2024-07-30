@@ -8,61 +8,68 @@
     <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Loja de Tênis</h1>
-        <nav>
-            <a href="/index.html">Home</a>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Cadastro de Conta</h2>
-            <form id="registration-form">
-                <div class="form-group">
-                    <label for="username">Nome de Usuário:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirmar Senha:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                <button type="submit">Cadastrar</button>
-                <p id="form-message"></p>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="/About/about.html">Sobre</a></li>
-                    <li><a href="/Form/cadastro.html">Cadastro</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                </ul>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="/img/background.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Loja de Tênis</h1>
+            <nav>
+                <a href="/index.html">Home</a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Cadastro de Conta</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="username">Nome de Usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Senha:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                    <p id="form-message"></p>
+                </form>
             </div>
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <ul>
-                    <li><a href="mailto:contato@lojatenis.com">contato@lojatenis.com</a></li>
-                    <li><a href="#">Redes Sociais</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 Loja de Tênis. Todos os direitos reservados.
-        </div>
-    </footer>
+        </main>
 
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="/About/about.html">Sobre</a></li>
+                        <li><a href="/Form/cadastro.html">Cadastro</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="mailto:contato@lojatenis.com">contato@lojatenis.com</a></li>
+                        <li><a href="#">Redes Sociais</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Loja de Tênis. Todos os direitos reservados.
+            </div>
+        </footer>
+    </div>
     <script src="/Form/scripts.js"></script>
 </body>
 </html>

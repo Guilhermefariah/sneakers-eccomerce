@@ -1,10 +1,30 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #e3e4e8, #f1f3f6);
     color: #2e2e2e;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -86,7 +106,7 @@ main {
 }
 
 .about-section {
-    background: linear-gradient(135deg, #4a90e2, #50e3c2);
+    background: linear-gradient(135deg, #4a91e236, #50e3c325);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;

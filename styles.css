@@ -29,6 +29,17 @@ nav a:hover {
     color: #ffdab9;
 }
 
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    opacity: 1; 
+}
+
 header {
     background: linear-gradient(135deg, #4a90e2, #50e3c2);
     color: #fff;
