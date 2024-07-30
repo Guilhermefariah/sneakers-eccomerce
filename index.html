@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Tênis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Loja de Tênis</h1>
         <div id="cart">
             <span id="cart-count">0</span> Itens no carrinho
         </div>
+        <button id="admin-btn">Painel Administrativo</button>
     </header>
     <main>
-        <section class="product-list">
-            <div class="product" data-name="Tênis Casual" data-price="120" data-description="Tênis ideal para uso casual e confortável.">
+        <section class="product-list" id="product-list">
+            <div class="product" data-name="Tênis Casual" data-price="120"
+                data-description="Tênis ideal para uso casual e confortável.">
                 <img src="https://via.placeholder.com/150" alt="Tênis Casual">
                 <h2>Tênis Casual</h2>
                 <p>Preço: R$120,00</p>
                 <button onclick="addToCart(this)">Adicionar ao carrinho</button>
                 <button onclick="showProductDetails(this)">Ver Detalhes</button>
             </div>
-            <div class="product" data-name="Tênis Esportivo" data-price="180" data-description="Tênis projetado para desempenho esportivo e alta durabilidade.">
+            <div class="product" data-name="Tênis Esportivo" data-price="180"
+                data-description="Tênis projetado para desempenho esportivo e alta durabilidade.">
                 <img src="https://via.placeholder.com/150" alt="Tênis Esportivo">
                 <h2>Tênis Esportivo</h2>
                 <p>Preço: R$180,00</p>
                 <button onclick="addToCart(this)">Adicionar ao carrinho</button>
                 <button onclick="showProductDetails(this)">Ver Detalhes</button>
             </div>
-            <!-- Adicione mais produtos conforme necessário -->
         </section>
     </main>
+    <div id="admin-panel" class="hidden">
+        <h2>Painel Administrativo</h2>
+        <button onclick="toggleAdminPanel()">Fechar Painel</button>
+        <h3>Adicionar Novo Produto</h3>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Nome do Produto" required>
+            <input type="number" id="product-price" placeholder="Preço" required>
+            <input type="text" id="product-description" placeholder="Descrição">
+            <button type="submit">Adicionar Produto</button>
+        </form>
+        <h3>Gerenciar Produtos</h3>
+        <div id="product-management">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
