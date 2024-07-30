@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    background: linear-gradient(to right, #f0f0f0, #d9d9d9);
 }
 
 header {
-    background-color: #333;
+    background-color: #4a90e2;
     color: white;
     padding: 10px;
     text-align: center;
@@ -21,6 +21,12 @@ header {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
+}
+
+#category-filter {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
 }
 
 main {
@@ -40,7 +46,7 @@ main {
     padding: 10px;
     text-align: center;
     width: 200px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -82,13 +88,42 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.featured {
+    border: 2px solid #ff6347;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.rating span {
+    font-size: 20px;
+    color: gold;
+}
+
+.rating button {
+    background-color: #ff9f00;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.rating button:hover {
+    background-color: #e68900;
+}
+
 #admin-panel {
     position: fixed;
     top: 0;
     right: 0;
     width: 300px;
     height: 100%;
-    background-color: #fff;
+    background-color: #ffffff;
     border-left: 1px solid #ddd;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);

@@ -15,22 +15,35 @@
             <span id="cart-count">0</span> Itens no carrinho
         </div>
         <button id="admin-btn">Painel Administrativo</button>
+        <select id="category-filter" onchange="filterProducts(this)">
+            <option value="">Todas as Categorias</option>
+            <option value="Casual">Casual</option>
+            <option value="Esportivo">Esportivo</option>
+        </select>
     </header>
     <main>
         <section class="product-list" id="product-list">
-            <div class="product" data-name="Tênis Casual" data-price="120"
-                data-description="Tênis ideal para uso casual e confortável.">
+            <div class="product featured" data-name="Tênis Casual" data-price="120"
+                data-description="Tênis ideal para uso casual e confortável." data-category="Casual">
                 <img src="https://via.placeholder.com/150" alt="Tênis Casual">
                 <h2>Tênis Casual</h2>
                 <p>Preço: R$120,00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <button onclick="rateProduct(this)">Avaliar</button>
+                </div>
                 <button onclick="addToCart(this)">Adicionar ao carrinho</button>
                 <button onclick="showProductDetails(this)">Ver Detalhes</button>
             </div>
             <div class="product" data-name="Tênis Esportivo" data-price="180"
-                data-description="Tênis projetado para desempenho esportivo e alta durabilidade.">
+                data-description="Tênis projetado para desempenho esportivo e alta durabilidade." data-category="Esportivo">
                 <img src="https://via.placeholder.com/150" alt="Tênis Esportivo">
                 <h2>Tênis Esportivo</h2>
                 <p>Preço: R$180,00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <button onclick="rateProduct(this)">Avaliar</button>
+                </div>
                 <button onclick="addToCart(this)">Adicionar ao carrinho</button>
                 <button onclick="showProductDetails(this)">Ver Detalhes</button>
             </div>
@@ -44,6 +57,7 @@
             <input type="text" id="product-name" placeholder="Nome do Produto" required>
             <input type="number" id="product-price" placeholder="Preço" required>
             <input type="text" id="product-description" placeholder="Descrição">
+            <input type="text" id="product-category" placeholder="Categoria">
             <button type="submit">Adicionar Produto</button>
         </form>
         <h3>Gerenciar Produtos</h3>
