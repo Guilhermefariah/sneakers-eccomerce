@@ -17,6 +17,21 @@
             <i class="fas fa-shopping-cart"></i>
         </div>
     </header>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x250" alt="Promoção 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/700x250" alt="Promoção 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/600x250" alt="Promoção 3">
+            </div>
+        </div>
+        <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
+    </div>
     <main>
         <aside id="filters">
             <select id="category-filter" onchange="filterProducts()">
@@ -76,6 +91,32 @@
         <div id="product-management">
         </div>
     </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Somos uma loja dedicada a fornecer os melhores tênis com estilo e conforto. Explore nossa seleção e
+                    encontre o par perfeito para você.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@lojatenis.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Loja de Tênis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

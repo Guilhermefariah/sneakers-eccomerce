@@ -362,12 +362,5 @@
         "description": "Tênis de treino cinza, com suporte extra para treinos intensos.",
         "category": "Treino",
         "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Academia Rosa",
-        "price": "190",
-        "description": "Tênis de academia rosa, confortável e moderno.",
-        "category": "Academia",
-        "image": "https://via.placeholder.com/150"
     }
 ]
