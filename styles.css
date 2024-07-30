@@ -23,14 +23,22 @@ header {
     font-weight: bold;
 }
 
-#category-filter {
+#filters {
     margin-top: 10px;
+}
+
+#filters select, #filters input {
+    margin: 5px;
     padding: 5px;
     font-size: 16px;
 }
 
-main {
-    padding: 20px;
+#search-box {
+    width: 200px;
+}
+
+#price-range {
+    width: 100%;
 }
 
 .product-list {

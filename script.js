@@ -23,7 +23,7 @@ function showProductDetails(button) {
 function rateProduct(button) {
     const product = button.closest('.product')
     const rating = prompt('Qual a sua avaliação (1 a 5 estrelas)?')
-    
+
     if (rating >= 1 && rating <= 5) {
         button.previousElementSibling.textContent = '⭐'.repeat(rating) + '⭐'.repeat(5 - rating)
         alert('Obrigado pela sua avaliação!')
@@ -74,15 +74,49 @@ document.getElementById('add-product-form').addEventListener('submit', (event) =
     document.getElementById('product-category').value = ''
 })
 
-function filterProducts(select) {
-    const category = select.value
+function filterProducts() {
+    const category = document.getElementById('category-filter').value
+    const priceRange = document.getElementById('price-range').value
+    const searchText = document.getElementById('search-box').value.toLowerCase()
+
     const products = document.querySelectorAll('.product')
-    
+
     products.forEach(product => {
-        if (category === '' || product.getAttribute('data-category') === category) {
+        const productCategory = product.getAttribute('data-category')
+        const productPrice = parseFloat(product.getAttribute('data-price'))
+        const productName = product.getAttribute('data-name').toLowerCase()
+
+        const withinPriceRange = productPrice <= priceRange
+        const matchesCategory = category === '' || productCategory === category
+        const matchesSearch = productName.includes(searchText)
+
+        if (withinPriceRange && matchesCategory && matchesSearch) {
             product.style.display = 'block'
         } else {
             product.style.display = 'none'
         }
     })
+
+    document.getElementById('price-label').textContent = priceRange
+}
+
+function sortProducts() {
+    const sortOrder = document.getElementById('sort-order').value
+    const productList = document.getElementById('product-list')
+    const products = Array.from(productList.querySelectorAll('.product'))
+
+    products.sort((a, b) => {
+        const priceA = parseFloat(a.getAttribute('data-price'))
+        const priceB = parseFloat(b.getAttribute('data-price'))
+
+        if (sortOrder === 'price-asc') {
+            return priceA - priceB
+        } else if (sortOrder === 'price-desc') {
+            return priceB - priceA
+        } else {
+            return 0
+        }
+    })
+
+    products.forEach(product => productList.appendChild(product))
 }
