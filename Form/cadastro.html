@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Conta</title>
+    <link rel="stylesheet" href="/Form/styles.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Loja de Tênis</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Cadastro de Conta</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Senha:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+                <p id="form-message"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Minha Aplicação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/Form/scripts.js"></script>
+</body>
+</html>

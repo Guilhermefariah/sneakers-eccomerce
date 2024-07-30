@@ -4,363 +4,209 @@
         "price": "120",
         "description": "Tênis ideal para uso casual e confortável.",
         "category": "Casual",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Esportivo",
         "price": "180",
         "description": "Tênis projetado para desempenho esportivo e alta durabilidade.",
         "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6726156/pexels-photo-6726156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Corrida",
         "price": "220",
         "description": "Tênis com excelente amortecimento para corredores.",
         "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6748330/pexels-photo-6748330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Skate",
         "price": "150",
         "description": "Tênis resistente com sola antiderrapante para skatistas.",
         "category": "Skate",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Treino",
         "price": "200",
         "description": "Tênis versátil para atividades de treino intensas.",
         "category": "Treino",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Academia",
         "price": "170",
         "description": "Tênis projetado para suportar exercícios em academia.",
         "category": "Academia",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/4252965/pexels-photo-4252965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Casual Preto",
         "price": "130",
         "description": "Tênis casual em preto, ideal para o dia a dia.",
         "category": "Casual",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Casual Branco",
         "price": "125",
         "description": "Tênis casual branco, fácil de combinar com qualquer roupa.",
         "category": "Casual",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Esportivo Vermelho",
         "price": "190",
         "description": "Tênis esportivo vermelho com alta performance.",
         "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6726156/pexels-photo-6726156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Esportivo Azul",
         "price": "185",
         "description": "Tênis esportivo azul com excelente suporte.",
         "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6726156/pexels-photo-6726156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Corrida Amortecido",
         "price": "230",
         "description": "Tênis de corrida com sistema avançado de amortecimento.",
         "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6748330/pexels-photo-6748330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Corrida Leve",
         "price": "240",
         "description": "Tênis de corrida leve para performance superior.",
         "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6748330/pexels-photo-6748330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Skate Preto",
         "price": "160",
         "description": "Tênis de skate preto, resistente e durável.",
         "category": "Skate",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Skate Colorido",
         "price": "155",
         "description": "Tênis de skate com design colorido e moderno.",
         "category": "Skate",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Treino Cinza",
         "price": "210",
         "description": "Tênis de treino cinza com suporte extra.",
         "category": "Treino",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Treino Verde",
         "price": "205",
         "description": "Tênis de treino verde, confortável e resistente.",
         "category": "Treino",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Academia Azul",
         "price": "175",
         "description": "Tênis de academia azul com ótimo ajuste.",
         "category": "Academia",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/4252965/pexels-photo-4252965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Academia Preto",
         "price": "180",
         "description": "Tênis de academia preto para treinos intensos.",
         "category": "Academia",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/4252965/pexels-photo-4252965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Casual Bege",
         "price": "140",
         "description": "Tênis casual bege, ideal para looks casuais.",
         "category": "Casual",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Casual Marrom",
         "price": "135",
         "description": "Tênis casual marrom, elegante e confortável.",
         "category": "Casual",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Esportivo Preto",
         "price": "195",
         "description": "Tênis esportivo preto com design aerodinâmico.",
         "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6726156/pexels-photo-6726156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis Esportivo Branco",
-        "price": "200",
-        "description": "Tênis esportivo branco com alta respirabilidade.",
+        "price": "190",
+        "description": "Tênis esportivo branco com suporte avançado.",
         "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Corrida Verde",
-        "price": "250",
-        "description": "Tênis de corrida verde com alta tecnologia.",
-        "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6726156/pexels-photo-6726156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Corrida Preto",
-        "price": "260",
-        "description": "Tênis de corrida preto com amortecimento avançado.",
+        "price": "235",
+        "description": "Tênis de corrida preto com amortecimento superior.",
         "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/6748330/pexels-photo-6748330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        "name": "Tênis de Skate Vermelho",
-        "price": "170",
-        "description": "Tênis de skate vermelho com ótimo desempenho.",
-        "category": "Skate",
-        "image": "https://via.placeholder.com/150"
+        "name": "Tênis de Corrida Branco",
+        "price": "225",
+        "description": "Tênis de corrida branco, leve e confortável.",
+        "category": "Corrida",
+        "image": "https://images.pexels.com/photos/6748330/pexels-photo-6748330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Skate Azul",
         "price": "165",
-        "description": "Tênis de skate azul com sola resistente.",
+        "description": "Tênis de skate azul, resistente e durável.",
         "category": "Skate",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "name": "Tênis de Skate Cinza",
+        "price": "160",
+        "description": "Tênis de skate cinza com design moderno.",
+        "category": "Skate",
+        "image": "https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Treino Preto",
         "price": "220",
-        "description": "Tênis de treino preto com suporte máximo.",
+        "description": "Tênis de treino preto com excelente suporte.",
         "category": "Treino",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Treino Branco",
         "price": "215",
-        "description": "Tênis de treino branco, confortável e moderno.",
+        "description": "Tênis de treino branco, confortável e durável.",
         "category": "Treino",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Academia Cinza",
         "price": "185",
-        "description": "Tênis de academia cinza com design ergonômico.",
+        "description": "Tênis de academia cinza com ajuste confortável.",
         "category": "Academia",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/4252965/pexels-photo-4252965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "name": "Tênis de Academia Verde",
-        "price": "190",
-        "description": "Tênis de academia verde com bom suporte.",
-        "category": "Academia",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Casual Azul",
-        "price": "150",
-        "description": "Tênis casual azul com estilo moderno.",
-        "category": "Casual",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Casual Verde",
-        "price": "145",
-        "description": "Tênis casual verde, confortável e leve.",
-        "category": "Casual",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Esportivo Cinza",
-        "price": "185",
-        "description": "Tênis esportivo cinza com excelente aderência.",
-        "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Esportivo Branco e Preto",
-        "price": "195",
-        "description": "Tênis esportivo branco e preto, estiloso e eficiente.",
-        "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Corrida Laranja",
-        "price": "240",
-        "description": "Tênis de corrida laranja com ótimo amortecimento.",
-        "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Corrida Amarelo",
-        "price": "250",
-        "description": "Tênis de corrida amarelo, leve e resistente.",
-        "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Skate Branco",
-        "price": "165",
-        "description": "Tênis de skate branco com design inovador.",
-        "category": "Skate",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Skate Preto e Branco",
-        "price": "160",
-        "description": "Tênis de skate preto e branco, com excelente durabilidade.",
-        "category": "Skate",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Treino Amarelo",
-        "price": "225",
-        "description": "Tênis de treino amarelo com suporte e conforto.",
-        "category": "Treino",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Treino Azul",
-        "price": "230",
-        "description": "Tênis de treino azul, ideal para atividades intensas.",
-        "category": "Treino",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Academia Branco",
-        "price": "175",
-        "description": "Tênis de academia branco, resistente e confortável.",
-        "category": "Academia",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Academia Preto e Cinza",
         "price": "180",
-        "description": "Tênis de academia preto e cinza, com ótimo ajuste.",
+        "description": "Tênis de academia verde, ideal para treinos intensos.",
         "category": "Academia",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Casual Lilás",
-        "price": "155",
-        "description": "Tênis casual lilás, elegante e confortável.",
-        "category": "Casual",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Casual Vermelho",
-        "price": "150",
-        "description": "Tênis casual vermelho, ideal para diversas ocasiões.",
-        "category": "Casual",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Esportivo Verde",
-        "price": "190",
-        "description": "Tênis esportivo verde com ótimo desempenho.",
-        "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis Esportivo Laranja",
-        "price": "185",
-        "description": "Tênis esportivo laranja, moderno e resistente.",
-        "category": "Esportivo",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Corrida Azul",
-        "price": "270",
-        "description": "Tênis de corrida azul, com excelente absorção de impactos.",
-        "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Corrida Preto e Verde",
-        "price": "280",
-        "description": "Tênis de corrida preto e verde com tecnologia avançada.",
-        "category": "Corrida",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Skate Marrom",
-        "price": "175",
-        "description": "Tênis de skate marrom, resistente e com ótimo grip.",
-        "category": "Skate",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Skate Cinza",
-        "price": "170",
-        "description": "Tênis de skate cinza com design elegante.",
-        "category": "Skate",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Treino Roxo",
-        "price": "240",
-        "description": "Tênis de treino roxo com ótima durabilidade.",
-        "category": "Treino",
-        "image": "https://via.placeholder.com/150"
-    },
-    {
-        "name": "Tênis de Treino Cinza",
-        "price": "245",
-        "description": "Tênis de treino cinza, com suporte extra para treinos intensos.",
-        "category": "Treino",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.pexels.com/photos/4252965/pexels-photo-4252965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
 ]
