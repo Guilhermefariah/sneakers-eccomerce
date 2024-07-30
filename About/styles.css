@@ -8,26 +8,31 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #800080, #ff69b4);
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
     color: #fff;
     padding: 20px 40px;
+    font-size: 1em;
     text-align: center;
     position: relative;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     animation: gradientAnimation 8s ease infinite;
-    border-bottom: 2px solid #ff69b4;
+    border-bottom: 2px solid #50e3c2;
 }
 
 @keyframes gradientAnimation {
     0% {
-        background: linear-gradient(135deg, #800080, #ff69b4);
+        background: linear-gradient(135deg, #4a90e2, #50e3c2);
     }
     50% {
-        background: linear-gradient(135deg, #9932cc, #ff1493);
+        background: linear-gradient(135deg, #6cc2f0, #7fdfd2);
     }
     100% {
-        background: linear-gradient(135deg, #800080, #9932cc);
+        background: linear-gradient(135deg, #4a90e2, #7fdfd2);
     }
+}
+
+header h1 {
+    animation: colorAnimation 6s ease-in-out infinite;
 }
 
 nav {
@@ -56,7 +61,7 @@ nav a:hover {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
@@ -64,7 +69,7 @@ nav a:hover {
 }
 
 #cart i {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-left: 10px;
 }
 
@@ -81,27 +86,28 @@ main {
 }
 
 .about-section {
-    background: #fff;
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
+    font-size: 1.5em;
+    color: #fff;
 }
 
 .about-section h2 {
-    color: #800080;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 footer {
     background: #333;
-    color: #fff;
+    color: #ffdab9;
     padding: 40px 20px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    border-top: 2px solid #ff1493;
-    font-size: 0.9em;
+    border-top: 2px solid #fff;
+    font-size: 1em;
 }
 
 .footer-content {
@@ -116,8 +122,8 @@ footer {
 }
 
 .footer-section h3 {
-    font-size: 1.4em;
-    color: #ff1493;
+    font-size: 1.5em;
+    color: #fff;
     margin-bottom: 15px;
 }
 
@@ -134,10 +140,11 @@ footer {
     color: #ffdab9;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 1em;
 }
 
 .footer-section ul li a:hover {
-    color: #ff69b4;
+    color: #50e3c2;
 }
 
 .footer-bottom {
@@ -157,22 +164,18 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #800080, #ff69b4);
+    background: #4a90e2;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg,#ff69b4, #800080)
+    background: #50e3c2;
 }
 
 @media (max-width: 768px) {
     main {
         flex-direction: column;
         padding: 20px;
-    }
-
-    .about-section {
-        width: 100%;
     }
 
     header {
