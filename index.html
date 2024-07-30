@@ -15,18 +15,21 @@
     </header>
     <main>
         <section class="product-list">
-            <div class="product" data-name="Tênis Casual" data-price="120">
+            <div class="product" data-name="Tênis Casual" data-price="120" data-description="Tênis ideal para uso casual e confortável.">
                 <img src="https://via.placeholder.com/150" alt="Tênis Casual">
                 <h2>Tênis Casual</h2>
                 <p>Preço: R$120,00</p>
                 <button onclick="addToCart(this)">Adicionar ao carrinho</button>
+                <button onclick="showProductDetails(this)">Ver Detalhes</button>
             </div>
-            <div class="product" data-name="Tênis Esportivo" data-price="180">
+            <div class="product" data-name="Tênis Esportivo" data-price="180" data-description="Tênis projetado para desempenho esportivo e alta durabilidade.">
                 <img src="https://via.placeholder.com/150" alt="Tênis Esportivo">
                 <h2>Tênis Esportivo</h2>
                 <p>Preço: R$180,00</p>
                 <button onclick="addToCart(this)">Adicionar ao carrinho</button>
+                <button onclick="showProductDetails(this)">Ver Detalhes</button>
             </div>
+            <!-- Adicione mais produtos conforme necessário -->
         </section>
     </main>
     <script src="script.js"></script>
