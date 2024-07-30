@@ -60,12 +60,18 @@ header {
     font-weight: bold;
     cursor: pointer;
     color: #fff;
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
     transition: color 0.3s ease;
+}
+
+#cart span {
+    font-size: 1.2em;
 }
 
 #cart i {
     font-size: 1.4em;
-    margin-left: 10px;
 }
 
 #cart:hover {
