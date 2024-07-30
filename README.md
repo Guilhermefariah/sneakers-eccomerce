@@ -2,6 +2,9 @@
 
 Bem-vindo à **Loja de Tênis**! Este é um projeto simples de uma loja online de tênis, implementado com HTML, CSS e JavaScript. A aplicação apresenta uma lista de produtos e um carrinho de compras básico.
 
+![Projeto](img/sneakers-eccomerce.png)
+
+
 ## Estrutura do Projeto
 
 O projeto é composto pelos seguintes arquivos:

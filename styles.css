@@ -49,13 +49,18 @@ header {
     margin-left: 10px;
 }
 
-#filters {
-    margin: 10px 0;
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
 }
 
-input, select {
-    padding: 12px;
-    border: 2px solid #ff6600;
+aside#filters {
+    width: 250px;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
     transition: border-color 0.3s;
@@ -71,6 +76,7 @@ input:focus, select:focus {
 }
 
 .product-list {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -172,12 +178,12 @@ input:focus, select:focus {
 
 #admin-panel button {
     background: linear-gradient(135deg, #ff6600, #ff3300);
-    color: white;
+    color: #fff;
     border: none;
-    padding: 12px 15px;
     border-radius: 5px;
+    padding: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.1em;
     transition: background-color 0.3s;
 }
 
@@ -185,14 +191,4 @@ input:focus, select:focus {
     background: linear-gradient(135deg, #ff3300, #ff6600);
 }
 
-#product-management {
-    margin-top: 20px;
-}
 
-.product-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-}
