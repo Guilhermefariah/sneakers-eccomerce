@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Tênis</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <h1>Loja de Tênis</h1>
-        <div id="cart">
-            <span id="cart-count">0</span> Itens no carrinho
+        <div id="cart" onclick="toggleAdminPanel()">
+            <span id="cart-count">0</span>
+            <i class="fas fa-shopping-cart"></i>
+
         </div>
-        <button id="admin-btn">Painel Administrativo</button>
         <div id="filters">
             <select id="category-filter" onchange="filterProducts()">
                 <option value="">Todas as Categorias</option>
                 <option value="Casual">Casual</option>
                 <option value="Esportivo">Esportivo</option>
             </select>
-            <input type="text" id="search-box" placeholder="Buscar produtos" onkeyup="searchProducts()">
+            <input type="text" id="search-box" placeholder="Buscar produtos" onkeyup="filterProducts()">
             <input type="range" id="price-range" min="0" max="500" step="10" oninput="filterProducts()">
             <label for="price-range">Faixa de Preço: R$<span id="price-label">500</span></label>
             <select id="sort-order" onchange="sortProducts()">
