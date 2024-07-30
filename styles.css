@@ -1,32 +1,32 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #f4f4f4, #ffffff);
-    color: #333;
+    background: linear-gradient(to right, #e3e4e8, #f1f3f6);
+    color: #2e2e2e;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    background: linear-gradient(135deg, #ff6600, #ff3300);
+    background: linear-gradient(135deg, #800080, #ff69b4);
     color: #fff;
     padding: 20px 40px;
     text-align: center;
     position: relative;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     animation: gradientAnimation 8s ease infinite;
-    border-bottom: 2px solid #ff3300;
+    border-bottom: 2px solid #ff69b4;
 }
 
 @keyframes gradientAnimation {
     0% {
-        background: linear-gradient(135deg, #ff6600, #ff3300);
+        background: linear-gradient(135deg, #800080, #ff69b4);
     }
     50% {
-        background: linear-gradient(135deg, #ff3f00, #ff6f00);
+        background: linear-gradient(135deg, #9932cc, #ff1493);
     }
     100% {
-        background: linear-gradient(135deg, #ff6600, #ff3f00);
+        background: linear-gradient(135deg, #800080, #9932cc);
     }
 }
 
@@ -47,7 +47,7 @@ header {
 }
 
 #cart:hover {
-    color: #ffcc00; /* Cor de destaque */
+    color: #ffdab9; 
 }
 
 main {
@@ -71,23 +71,25 @@ aside#filters {
 }
 
 aside#filters:hover {
-    border-color: #ff3300;
+    border-color: #800080;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #filters select, #filters input {
+    background: linear-gradient(to right, #ffffff, #f8f8f8);
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 12px;
     margin: 12px 0;
     width: calc(100% - 24px);
     font-size: 1em;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, background 0.3s;
 }
 
 #filters select:focus, #filters input:focus {
-    border-color: #ff3300;
+    border-color: #800080;
     outline: none;
+    background: linear-gradient(to right, #ffffff, #e3e4e8);
 }
 
 #filters label {
@@ -96,7 +98,7 @@ aside#filters:hover {
 
 #price-label {
     font-weight: bold;
-    color: #ff3300;
+    color: #800080;
 }
 
 .product-list {
@@ -140,7 +142,7 @@ aside#filters:hover {
 }
 
 .product button {
-    background-color: #ff6600;
+    background: linear-gradient(135deg, #800080, #ff69b4);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -148,11 +150,11 @@ aside#filters:hover {
     margin: 8px 0;
     cursor: pointer;
     font-size: 1.1em;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .product button:hover {
-    background-color: #ff3300;
+    background: linear-gradient(135deg, #ff69b4, #800080);
     transform: scale(1.05);
 }
 
@@ -184,7 +186,7 @@ aside#filters:hover {
 #admin-panel h2 {
     margin-top: 0;
     font-size: 1.6em;
-    color: #ff3300;
+    color: #ff1493;
 }
 
 #admin-panel form {
@@ -194,38 +196,40 @@ aside#filters:hover {
 }
 
 #admin-panel input {
+    background: linear-gradient(to right, #ffffff, #f8f8f8);
     padding: 15px;
-    border: 2px solid #ff6600;
+    border: 2px solid #800080;
     border-radius: 10px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, background 0.3s;
     font-size: 1.1em;
 }
 
 #admin-panel input:focus {
-    border-color: #ff3300;
+    border-color: #ff1493;
     outline: none;
+    background: linear-gradient(to right, #ffffff, #e3e4e8);
 }
 
 #admin-panel button {
-    background: linear-gradient(135deg, #ff6600, #ff3300);
+    background: linear-gradient(135deg, #800080, #ff69b4);
     color: #fff;
     border: none;
     border-radius: 10px;
     padding: 15px;
     cursor: pointer;
     font-size: 1.2em;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 #admin-panel button:hover {
-    background: linear-gradient(135deg, #ff3300, #ff6600);
+    background: linear-gradient(135deg, #ff69b4, #800080);
     transform: scale(1.05);
 }
 
 .carousel {
     position: relative;
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 300px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 20px;
@@ -284,7 +288,7 @@ aside#filters:hover {
 
 .carousel-prev:hover,
 .carousel-next:hover {
-    background: #ff6600;
+    background: #800080;
     color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -302,29 +306,25 @@ footer {
     color: #fff;
     padding: 40px 20px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    border-top: 2px solid #ff3300;
+    border-top: 2px solid #ff1493;
     font-size: 0.9em;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 200px;
+    max-width: 300px;
 }
 
 .footer-section h3 {
-    margin-top: 0;
-    color: #ff6600;
-}
-
-.footer-section p, .footer-section ul {
-    margin: 10px 0;
+    font-size: 1.4em;
+    color: #ff1493;
+    margin-bottom: 15px;
 }
 
 .footer-section ul {
@@ -333,25 +333,50 @@ footer {
 }
 
 .footer-section ul li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color: #ffdab9;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    text-decoration: underline;
+    color: #ff69b4;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
+    margin-top: 40px;
+    border-top: 1px solid #555;
+    padding: 20px 0;
 }
 
-.footer-bottom p {
-    margin: 0;
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #f4f4f4, #ffffff); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #800080, #ff69b4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg,#ff69b4, #800080)
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside#filters {
+        max-width: 100%;
+    }
 }

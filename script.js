@@ -40,11 +40,15 @@ function toggleAdminPanel() {
 document.getElementById('add-product-form').addEventListener('submit', (event) => {
     event.preventDefault()
 
-    const name = document.getElementById('product-name').value
-    const price = document.getElementById('product-price').value
-    const description = document.getElementById('product-description').value
-    const category = document.getElementById('product-category').value
+    const name = document.getElementById('product-name').value.trim()
+    const price = document.getElementById('product-price').value.trim()
+    const description = document.getElementById('product-description').value.trim()
+    const category = document.getElementById('product-category').value.trim()
 
+    if (!name || !price || isNaN(price) || price <= 0) {
+        alert('Por favor, preencha todos os campos corretamente.')
+        return
+    }
     const productList = document.getElementById('product-list')
     const newProduct = document.createElement('div')
     newProduct.classList.add('product')
@@ -153,29 +157,19 @@ window.onload = loadProducts
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item')
-    const totalSlides = slides.length
-
-    if (index >= totalSlides) {
-        currentSlide = 0
-    } else if (index < 0) {
-        currentSlide = totalSlides - 1
-    } else {
-        currentSlide = index
-    }
-
-    const offset = -currentSlide * 100
-    const carouselInner = document.querySelector('.carousel-inner')
-    carouselInner.style.transform = `translateX(${offset}%)`
-}
-
-function nextSlide() {
-    showSlide(currentSlide + 1)
+    if (index >= slides.length) currentSlide = 0
+    if (index < 0) currentSlide = slides.length - 1
+    
+    document.querySelector('.carousel-inner').style.transform = `translateX(-${currentSlide * 100}%)`
 }
 
 function prevSlide() {
-    showSlide(currentSlide - 1)
+    showSlide(--currentSlide)
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentSlide)
-})
+function nextSlide() {
+    showSlide(++currentSlide)
+}
+
+setInterval(nextSlide, 2000) 
+
