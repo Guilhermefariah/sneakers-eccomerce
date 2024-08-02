@@ -92,13 +92,13 @@ header {
 main {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     padding: 40px;
     gap: 30px;
 }
 
 aside#filters {
-    width: 100%;
+    width: 300px;
     max-width: 350px;
     background: #fff;
     border: 1px solid #ddd;
@@ -385,10 +385,15 @@ footer {
 
     aside#filters {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .product {
         width: 100%;
+    }
+
+    .product-list {
+        padding: 0;
     }
 
     header {

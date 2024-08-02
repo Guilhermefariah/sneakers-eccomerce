@@ -5,129 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Tênis</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
 </head>
 
 <body>
+    <div id="header-container">
+        <script>
+            fetch('components/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data)
+        </script>
+    </div>
+
     <video autoplay muted loop id="background-video">
-        <source src="/img/background.mp4" type="video/mp4">
+        <source src="assets/videos/background.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
-    <header>
-        <h1>Loja de Tênis</h1>
-        <nav>
-            <a href="/About/about.html">Sobre</a>
-            <a href="/Form/cadastro.html">Cadastro</a>
-            <div id="cart" onclick="toggleAdminPanel()">
-                <span id="cart-count">0</span>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-        </nav>
-    </header>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/833052/pexels-photo-833052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Promoção 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/1036396/pexels-photo-1036396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Promoção 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/1735559/pexels-photo-1735559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Promoção 3">
-            </div>
-        </div>
+
+    <div id="carousel-container">
+        <script>
+            fetch('components/carousel.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('carousel-container').innerHTML = data)
+        </script>
     </div>
+
     <main>
-        <aside id="filters">
-            <select id="category-filter" onchange="filterProducts()">
-                <option value="">Todas as Categorias</option>
-                <option value="Casual">Casual</option>
-                <option value="Esportivo">Esportivo</option>
-            </select>
-            <input type="text" id="search-box" placeholder="Buscar produtos" onkeyup="filterProducts()">
-            <input type="range" id="price-range" min="0" max="500" step="10" oninput="filterProducts()">
-            <label for="price-range">Faixa de Preço: R$<span id="price-label">500</span></label>
-            <select id="sort-order" onchange="sortProducts()">
-                <option value="default">Ordenar por</option>
-                <option value="price-asc">Preço: Menor para Maior</option>
-                <option value="price-desc">Preço: Maior para Menor</option>
-            </select>
+        <aside id="filters-container">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    fetch('components/filters.html')
+                        .then(response => response.text())
+                        .then(data => document.getElementById('filters-container').innerHTML = data)
+                })
+            </script>            
         </aside>
-        <section class="product-list" id="product-list">
-            <div class="product featured" data-name="Tênis Casual" data-price="120"
-                data-description="Tênis ideal para uso casual e confortável." data-category="Casual">
-                <img src="https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tênis Casual">
-                <h2>Tênis Casual</h2>
-                <p>Preço: R$120,00</p>
-                <div class="rating">
-                    <span>⭐⭐⭐⭐⭐</span>
-                    <button onclick="rateProduct(this)">Avaliar</button>
-                </div>
-                <button onclick="addToCart(this)">Adicionar ao carrinho</button>
-                <button onclick="showProductDetails(this)">Ver Detalhes</button>
-            </div>
-            <div class="product" data-name="Tênis Esportivo" data-price="180"
-                data-description="Tênis projetado para desempenho esportivo e alta durabilidade."
-                data-category="Esportivo">
-                <img src="https://images.pexels.com/photos/6748330/pexels-photo-6748330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tênis Esportivo">
-                <h2>Tênis Esportivo</h2>
-                <p>Preço: R$180,00</p>
-                <div class="rating">
-                    <span>⭐⭐⭐⭐⭐</span>
-                    <button onclick="rateProduct(this)">Avaliar</button>
-                </div>
-                <button onclick="addToCart(this)">Adicionar ao carrinho</button>
-                <button onclick="showProductDetails(this)">Ver Detalhes</button>
-            </div>
+
+        <section id="product-list-container">
+            <script>
+                fetch('components/product-list.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('product-list-container').innerHTML = data)
+            </script>
         </section>
     </main>
-    <div id="admin-panel" class="hidden">
-        <h2>Painel Administrativo</h2>
-        <button onclick="toggleAdminPanel()">Fechar Painel</button>
-        <h3>Adicionar Novo Produto</h3>
-        <form id="add-product-form">
-            <input type="text" id="product-name" placeholder="Nome do Produto" required>
-            <input type="number" id="product-price" placeholder="Preço" required>
-            <input type="text" id="product-description" placeholder="Descrição">
-            <input type="text" id="product-category" placeholder="Categoria">
-            <button type="submit">Adicionar Produto</button>
-        </form>
-        <h3>Gerenciar Produtos</h3>
-        <div id="product-management">
-        </div>
+
+    <div id="admin-panel-container">
+        <script>
+            fetch('components/admin-panel.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('admin-panel-container').innerHTML = data)
+        </script>
     </div>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Sobre Nós</h3>
-                <p>Somos uma loja dedicada a fornecer os melhores tênis com estilo e conforto. Explore nossa seleção e
-                    encontre o par perfeito para você.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <p>Telefone: (11) 1234-5678</p>
-                <p>Email: contato@lojatenis.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Loja de Tênis. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+
+    <div id="footer-container">
+        <script>
+            fetch('components/footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer-container').innerHTML = data)
+        </script>
+    </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

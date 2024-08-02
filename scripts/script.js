@@ -33,7 +33,7 @@ function rateProduct(button) {
     }
 }
 
-function toggleAdminPanel() {
+function adminPanel() {
     document.getElementById('admin-panel').classList.toggle('hidden')
 }
 
@@ -77,7 +77,7 @@ document.getElementById('add-product-form').addEventListener('submit', (event) =
 
 function filterProducts() {
     const category = document.getElementById('category-filter').value
-    const priceRange = document.getElementById('price-range').value
+    const priceRange = parseFloat(document.getElementById('price-range').value)
     const searchText = document.getElementById('search-box').value.toLowerCase()
 
     const products = document.querySelectorAll('.product')
@@ -87,7 +87,7 @@ function filterProducts() {
         const productPrice = parseFloat(product.getAttribute('data-price'))
         const productName = product.getAttribute('data-name').toLowerCase()
 
-        const withinPriceRange = productPrice <= priceRange
+        const withinPriceRange = priceRange === '' || productPrice <= priceRange
         const matchesCategory = category === '' || productCategory === category
         const matchesSearch = productName.includes(searchText)
 
@@ -98,7 +98,7 @@ function filterProducts() {
         }
     })
 
-    document.getElementById('price-label').textContent = priceRange
+    document.getElementById('price-label').textContent = priceRange || 'Sem limite'
 }
 
 function sortProducts() {
@@ -124,7 +124,7 @@ function sortProducts() {
 
 async function loadProducts() {
     try {
-        const response = await fetch('products.json')
+        const response = await fetch('/products.json')
         const products = await response.json()
 
         const productList = document.getElementById('product-list')
@@ -171,5 +171,4 @@ function nextSlide() {
     showSlide(++currentSlide)
 }
 
-setInterval(nextSlide, 2000) 
-
+setInterval(nextSlide, 2000)

@@ -1,0 +1,15 @@
+<aside id="filters">
+    <select id="filters-select" onchange="filterProducts()">
+        <option value="">Todas as Categorias</option>
+        <option value="Casual">Casual</option>
+        <option value="Esportivo">Esportivo</option>
+    </select>
+    <input type="text" id="search-box" placeholder="Buscar produtos" onkeyup="filterProducts()">
+    <input type="range" id="price-range" min="0" max="500" step="10" oninput="filterProducts()">
+    <label for="price-range">Faixa de Preço: R$<span id="price-label">500</span></label>
+    <select id="sort-order" onchange="sortProducts()">
+        <option value="default">Ordenar por</option>
+        <option value="price-asc">Preço: Menor para Maior</option>
+        <option value="price-desc">Preço: Maior para Menor</option>
+    </select>
+</aside>
